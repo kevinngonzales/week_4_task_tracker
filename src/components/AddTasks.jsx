@@ -4,7 +4,7 @@ import React, { useState } from "react";
 //create functional component which recives props from parent component
 function AddTasks(props) {
   //useState hook: newTask is what user inputs and setNewTask is a function used to update value of newTask
-  const [newTask, setNewTask] = useState('');
+  const [newTask, setNewTask] = useState("");
 
   //this function handles changes in the form input field
   //when the form checks for changes then this function is called and setNewTask gets called and updates the value of newTask to whatever gets put in the input field
@@ -22,7 +22,7 @@ function AddTasks(props) {
     props.onSubmit({
       text: newTask,
     });
-    setNewTask('');
+    setNewTask("");
   }
 
   //create a form element with necessary attributes
@@ -31,7 +31,6 @@ function AddTasks(props) {
   //lastly, create button to submit whatever is in the input field
   return (
     <form className="taskForm" onSubmit={handleButton}>
-
       <input
         type="text"
         value={newTask}
@@ -41,7 +40,6 @@ function AddTasks(props) {
       />
 
       <button className="taskButton"> Add Task </button>
-
     </form>
   );
 }

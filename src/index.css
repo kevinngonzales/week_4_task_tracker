@@ -36,6 +36,10 @@ h1 {
   line-height: 1.1;
 }
 
+.taskForm {
+  padding: 8px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -55,12 +59,14 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-content {
-  flex: 1;
-}
-
-footer {
-flex-shrink: 0;
+.footer {
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  color: black;
+  font-size: small;
+  background-color: white;
+  flex-shrink: 0;
 }
 
 @media (prefers-color-scheme: light) {
